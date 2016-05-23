@@ -1,4 +1,6 @@
-Template.eventoman.rendered = function() {};
+Template.eventoman.rendered = function() {
+
+};
 
 Template.eventoman.events({
     'click .interested': function(event) {

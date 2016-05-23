@@ -1,6 +1,6 @@
 EventController = AppController.extend({
     waitOn: function () {
-        return this.subscribe('events');
+        return this.subscribe('eventoman');
     },
     data: {
         eventoman: Events.find({})

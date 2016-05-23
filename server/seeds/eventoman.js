@@ -1,6 +1,6 @@
 Meteor.startup(function() {
 
-  Factory.define('event', Events, {
+  Factory.define('eventoman', Events, {
     name: function() { return Fake.sentence(); },
     place: function() { return Fake.word(); },
     attending: function () { return _.random(0,20); },
@@ -10,7 +10,7 @@ Meteor.startup(function() {
   if (Events.find({}).count() === 0) {
 
     _(10).times(function(n) {
-      Factory.create('event');
+      Factory.create('eventoman');
     });
 
   }

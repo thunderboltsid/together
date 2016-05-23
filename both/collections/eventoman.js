@@ -1,4 +1,4 @@
-Events = new Mongo.Collection('events');
+Events = new Mongo.Collection('eventoman');
 
 Events.helpers({
   

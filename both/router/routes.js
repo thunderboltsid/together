@@ -22,10 +22,10 @@ Router.route('/requests/:id', {
 });
 
 Router.route('/events', {
-    name: 'events',
+    name: 'eventoman',
     controller: 'EventController'
 });
 
 Router.plugin('ensureSignedIn', {
-  only: ['dashboard', 'events', 'requests']
+  only: ['dashboard', 'eventoman', 'requests']
 });
