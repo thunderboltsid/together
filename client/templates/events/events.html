@@ -5,9 +5,11 @@
         </div>
 
         <ul class="list-group">
-            {{#each events}}
-                <li class="list-group-item">{{ name }}, {{ place }}, {{ datetime }} <span
-                        class="label label-default">{{ attending }}</span></li>
+            {{#each eventoman}}
+                <li class="list-group-item">{{ name }}, {{ place }}, {{ datetime }}
+                    <span class="label label-default">{{ attending }}</span>
+                    <button class="interested">Interested</button>
+                </li>
             {{/each}}
         </ul>
     </div>

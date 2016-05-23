@@ -1,4 +1,4 @@
-Meteor.publishComposite("events", function () {
+Meteor.publishComposite("events", function() {
     return {
         find: function() {
             return Events.find({});
