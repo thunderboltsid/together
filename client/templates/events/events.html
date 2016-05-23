@@ -1,0 +1,14 @@
+<template name="events">
+    <div class="template-events">
+        <div class="page-header">
+            <h1>Events</h1>
+        </div>
+
+        <ul class="list-group">
+            {{#each items}}
+                <li class="list-group-item">{{ name }}, {{ place }}, {{ date }}, {{ time }} <span
+                        class="label label-default">{{ attending }}</span></li>
+            {{/each}}
+        </ul>
+    </div>
+</template>

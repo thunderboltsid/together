@@ -22,5 +22,5 @@ Router.route('/events', {
 });
 
 Router.plugin('ensureSignedIn', {
-  only: ['dashboard']
+  only: ['dashboard', 'events', 'requests']
 });

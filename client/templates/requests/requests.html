@@ -1,0 +1,14 @@
+<template name="requests">
+    <div class="template-requests">
+        <div class="page-header">
+            <h1>Requests</h1>
+        </div>
+
+        <ul class="list-group">
+            {{#each items}}
+                <li class="list-group-item">{{ title }} <span
+                        class="label label-default">{{ upvotes }}</span></li>
+            {{/each}}
+        </ul>
+    </div>
+</template>
