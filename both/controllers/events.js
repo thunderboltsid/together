@@ -4,12 +4,18 @@
 
 EventController = AppController.extend({
     waitOn: function () {
-        return this.subscribe('events');
+        return this.subscribe('items');
     },
     data: {
-        items: Items.find({})
+        items: Events.find({})
     },
     onAfterAction: function () {
         Meta.setTitle('Events');
+    }
+});
+
+EventController.events({
+    'click [data-action=doSomething]': function (event, template) {
+        event.preventDefault();
     }
 });
