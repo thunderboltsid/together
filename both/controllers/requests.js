@@ -7,7 +7,7 @@ RequestController = AppController.extend({
         return this.subscribe('requests');
     },
     data: {
-        items: Items.find({})
+        requests: Requests.find({})
     },
     onAfterAction: function () {
         Meta.setTitle('Requests');

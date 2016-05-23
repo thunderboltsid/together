@@ -6,7 +6,10 @@
 
     <ul class="list-group">
       {{#each requests}}
-        <li class="list-group-item">{{ name }} <span class="label label-default">{{ upvotes }}</span></li>
+        <li class="list-group-item">{{ name }}
+            <span class="label label-default">{{ upvotes }}</span>
+            <button class="upvote">Upvote</button>
+        </li>
       {{/each}}
     </ul>
 
