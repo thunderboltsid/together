@@ -4,10 +4,10 @@
 
 RequestController = AppController.extend({
     waitOn: function () {
-        return this.subscribe('items');
+        return this.subscribe('requests');
     },
     data: {
-        items: Requests.find({})
+        requests: Requests.find({})
     },
     onAfterAction: function () {
         Meta.setTitle('Requests');
