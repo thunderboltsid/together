@@ -1,7 +1,3 @@
-/**
- * Created by siddharthshukla on 23/05/16.
- */
-
 RequestController = AppController.extend({
     waitOn: function () {
         return this.subscribe('requests');
@@ -13,8 +9,14 @@ RequestController = AppController.extend({
         Meta.setTitle('Requests');
     }
 });
+
 RequestController.events({
     'click [data-action=doSomething]': function (event, template) {
         event.preventDefault();
+    },
+    'click .upvote': function(event) {
+        var request = Requests.findOne({_id: this._id});
+        request.upvotes += 1;
+        Requests.save(request)
     }
 });
