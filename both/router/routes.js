@@ -16,6 +16,11 @@ Router.route('/requests', {
     controller: 'RequestController'
 });
 
+Router.route('/requests/:id', {
+    name: 'requests/requestDetail',
+    controller: 'RequestController'
+});
+
 Router.route('/events', {
     name: 'events',
     controller: 'EventController'
